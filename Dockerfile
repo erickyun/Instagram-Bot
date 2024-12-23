@@ -13,6 +13,8 @@ RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 # Install virtualenv if not already available
 RUN apt-get update && apt-get install -y python3-venv
 
+RUN pip install schedule
+
 WORKDIR /app
 RUN chmod 777 /app
 
