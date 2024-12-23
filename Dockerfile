@@ -1,4 +1,8 @@
 FROM ubuntu:20.04
+FROM python:3.9-slim
+
+# Install virtualenv if not already available
+RUN apt-get update && apt-get install -y python3-venv
 
 WORKDIR /app
 RUN chmod 777 /app
