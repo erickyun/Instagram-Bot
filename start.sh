@@ -1,4 +1,4 @@
 #!/bin/sh
 
 curl -o /app/.env -L $ACCS
-python3 main.py
+instabotenv/bin/activate && python main.py
