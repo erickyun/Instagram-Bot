@@ -2,4 +2,4 @@
 
 curl -o /app/.env -L $ACCS
 source instabotenv/bin/activate
-python main.py
+python3 scheduler.py & python main.py
